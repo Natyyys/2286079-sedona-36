@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Наталья Моисеева](https://up.htmlacademy.ru/htmlcss/36/user/2286079).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай Думчев](https://htmlacademy.ru/profile/nikopol-fw).
 
 ---
 
