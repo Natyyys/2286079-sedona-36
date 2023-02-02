@@ -13,3 +13,237 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+
+body {
+  font-family: "PT Sans", sans-serif;
+
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.navigation-user-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.button-navigation-user-item {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.advantages {
+  text-align: center;
+}
+.promo-title-text {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-title {
+  font-family: "PT Sans";
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item-photo {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-item {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-description {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.servuces-title {
+  text-align: center;
+}
+
+.servuces-title-text {
+  font-family: "PT Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.servuces-text {
+    color: #333333;
+}
+
+.services-hotel {
+  font-family: "PT Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-food {
+  font-family: "PT Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-souvenirs {
+  font-family: "PT Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.hotel-text {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.food-text {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.souvenirs-text {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.services-item {
+  background-attachment: rgba(0, 0, 0, 0.2);
+}
+
+.services-item:first-child {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.services-item:last-child {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.hotel-search-title {
+  text-align: center;
+}
+
+.hotel-search-subtitle {
+  font-family: "PT Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.button-search-hotel {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.page-footer {
+  text-align: center;
+}
+
+.newsletter {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("../images/footer/subscribe.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.page-main {
+  font-family: "PT Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.field {
+  font-family: "PT Sans";
+  font-size: 18px;;
+  line-height: 24px;
+  color: #000000;
+}
+
+.newsletter-button {
+  font-family: "PT Sans";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.footer-contacts-phone {
+  font-family: "PT Sans";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
