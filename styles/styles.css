@@ -241,9 +241,160 @@ body {
 .footer-contacts-phone {
   font-family: "PT Sans";
   font-size: 40px;
-  font-weight: 700;
   line-height: 40px;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+/*Catalog*/
+
+.main-inner {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("../images/filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-title {
+  font-family: "PT Sans";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+
+.breadcrumbs-link {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-family: "PT Sans";
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.control-input {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button-submit {
+  background-color: #82B3D3;
+}
+
+.button-reset {
+  background-color: #000000;
+}
+
+.catalog-hotel-search {
+  font-family: "PT Sans";
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #FFFFFF;
+}
+
+.catalog-search {
+  font-family: "PT Sans";
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-card-title {
+  font-family: "PT Sans";
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-card-type {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-card-price {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-card-button {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.details {
+  background-color: #756157;
+}
+
+.favourites {
+  background-color: #82B3D3;
+}
+
+.hotel-rating {
+  color: #333333;
+  font-weight: 400;
+}
+
+.pagination-link {
+  font-family: "PT Sans";
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.ellipsis {
+  font-weight: 400;
+  color: #000000;
+  background-color:#FFFFFF;
+}
+
+.pagination-current {
+  font-family: "PT Sans";
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pade-footer-catalog {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.page-main-text-catalog {
+  color: #333333;
 }
