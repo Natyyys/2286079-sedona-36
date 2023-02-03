@@ -60,7 +60,11 @@ body {
 }
 
 .main-index-promo {
+  background-color: #82B3D3;
   text-align: center;
+  background-image: url("../images/hero.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .advantages {
