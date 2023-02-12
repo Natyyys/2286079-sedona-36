@@ -14,13 +14,54 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
   font-family: "PT Sans", sans-serif;
 
   font-size: 22px;
   line-height: 26px;
   color: #333333;
   background-color: #FFFFFF;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+/*.visually-hidden {
+  display: none;
+}*/
+
+.navigation-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  width: 140px;
+  margin-right: auto;
+}
+
+.navigation-list {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user-list {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  margin-left:  auto;
 }
 
 .navigation-link {
@@ -47,6 +88,12 @@ body {
   text-decoration: none;
 }
 
+.button-navigation-user-item {
+  width: 92px;
+  height: 20px;
+  padding: 8px 34px;
+}
+
 .button {
   color: #FFFFFF;
   background-color: #756157;
@@ -69,7 +116,23 @@ body {
   text-transform: uppercase;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  display: block;
+  margin: 0 auto;
+  padding: 51px 371px 82px;
+}
+
 .main-index-promo {
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+  height: 485px;
+
   background-color: #8199a5;
   background-image: url("../images/hero.jpg");
   background-size: cover;
@@ -79,13 +142,29 @@ body {
 
 .advantages {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
+
 .promo-title-text {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+
+  width: 620px;
+  height: 82px;
+  margin: 0 auto;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-title {
@@ -94,9 +173,28 @@ body {
   text-transform: uppercase;
 }
 
+.advantages-item,
+.services-item {
+  margin: 0;
+  width: 230px;
+  height: 181px;
+  padding: 102px 85px;
+}
+
 .advantages-item-photo {
+  display: flex;
+  margin: 0;
+  padding: 0;
   color: #FFFFFF;
   background-color: #82B3D3;
+}
+
+.advantages-photo {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 181px;
+  padding: 102px 85px;
 }
 
 .advantages-item {
@@ -115,6 +213,13 @@ body {
 
 .services{
   text-align: center;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  display: flex;
 }
 
 .services-title {
@@ -144,6 +249,10 @@ body {
 
 .hotel-search {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 406px;
 }
 
 .hotel-search-title {
@@ -152,10 +261,24 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  width: 297px;
+  height: 36px;
+  margin: 96px 451.5px 20px;
+}
+
+.hotel-search-text {
+  width: 592px;
+  height: 52px;
+  margin: 0 304px;
 }
 
 .button-search-hotel {
   background-color: #756157;
+  width: 276px;
+  height: 36px;
+  display: block;
+  padding: 8px 50px;
+  margin: 54px 412px 96px;
 }
 
 .newsletter {
@@ -165,6 +288,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+
+  width: 1200px;
+  height: 415px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-main {
@@ -172,6 +301,21 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+
+  width: 404px;
+  height: 36.35px;
+  margin: 96px 398px 20px;
+}
+
+.page-main-text {
+  width: 475px;
+  height: 52.51px;
+  margin: 0 362.5px 54px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin: 0 auto;
 }
 
 .field {
@@ -179,6 +323,11 @@ body {
   line-height: 24px;
   font: inherit;
   color: #000000;
+
+  width: 452px;
+  height: 52px;
+  padding: 0;
+  border: 0;
 }
 
 .newsletter-button {
@@ -188,6 +337,27 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
+
+  width: 232px;
+  height: 52px;
+  padding: 0;
+  border: 0;
+}
+
+.footer-social {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer-social-list {
+  width: 142px;
+  padding: 0;
+  margin-top: 45px;
+  margin-bottom: 35px;
+  margin-left: 70px;
+
 }
 
 .footer-contacts-phone {
@@ -196,6 +366,20 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+
+  width: 331px;
+  height: 40px;
+  padding: 5px 195px;
+  margin-top: 45px;
+}
+
+.htmlacademy-link {
+  width: 115px;
+  height: 33px;
+  padding-top: 8.5px;
+  padding-bottom: 8.5px;
+  padding-left: 41.5px;
+  margin-top: 45px;
 }
 
 /*Catalog*/
