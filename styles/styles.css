@@ -49,6 +49,7 @@ body {
 
 .button {
   color: #FFFFFF;
+  background-color: #756157;
   font: inherit;
   font-weight: 700;
   text-transform: uppercase;
@@ -66,10 +67,6 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-}
-
-.button-navigation-user-item {
-  background-color: #756157;
 }
 
 .main-index-promo {
@@ -139,10 +136,6 @@ body {
 .services-item-text {
   font-size: 18px;
   line-height: 21px;
-}
-
-.services-item:nth-child(even) {
-  background-attachment: rgba(0, 0, 0, 0.2);
 }
 
 .services-item:nth-child(odd) {
