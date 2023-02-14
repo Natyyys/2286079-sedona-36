@@ -36,6 +36,7 @@ body {
   flex-grow: 1;
 }
 
+/*Навигация*/
 
 .navigation-container {
   display: flex;
@@ -91,6 +92,8 @@ body {
   padding: 8px 34px;
 }
 
+/*Кнопки*/
+
 .button {
   color: #FFFFFF;
   background-color: #756157;
@@ -112,6 +115,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
 }
+
+/*Главная страница*/
 
 .page-container {
   width: 1200px;
@@ -154,6 +159,11 @@ body {
   width: 620px;
   height: 82px;
   margin: 0 auto;
+  margin-top: 69px;
+}
+
+.advantages-text {
+  margin-bottom: 69px;
 }
 
 .advantages-list {
@@ -225,6 +235,12 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+
+  margin-top: 64px;
+}
+
+.services-text {
+  margin-bottom: 64px;
 }
 
 .services-item-title {
@@ -424,6 +440,7 @@ body {
   width: 150.43px;
   height: 157px;
   padding-left: 0;
+  margin: 0;
   }
 
 .breadcrumbs {
@@ -462,19 +479,20 @@ body {
   flex-direction: column;
   width: 288px;
   height: 160px;
-  margin-left: 140.15px;
+  margin-left: 70px;
 }
 
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 
-.control {
+.catalog-filter-item {
   font-size: 18px;
   line-height: 23px;
+  margin-top: 16px;
 }
 
 .filter-price {
@@ -501,18 +519,25 @@ body {
 
 /*Кнопки фильтра*/
 
+.filter-button {
+  width: 191px;
+  height: 104px;
+  margin-left: 70px;
+  margin-top: 54px;
+}
+
 .button-submit {
   padding: 8px 50px;
-  margin: 68px 70px 32px 70px;
+  margin: 0 0 32px 70px;
   border: none;
   background-color: #82B3D3;
 }
 
 .button-reset {
   padding: 8px 57.5px;
-  margin: 0 70px 32px 70px;
+  margin: 0 0 32px 70px;
   border: none;
-  background-color: #b0c9d9;
+  background-color: transparent;
 }
 
 /*Результаты поиска*/
@@ -534,6 +559,7 @@ body {
 
   width: 1200px;
   margin-left: 70px;
+  margin-top: 50px;
 }
 
 .button-light {
@@ -547,8 +573,8 @@ body {
 }
 
 .select-control {
-  width: 292px;
-  height: 49px;
+  width: 288px;
+  height: 44px;
   margin: 50px 70px 40px 200px;
 }
 
@@ -564,8 +590,9 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-  width: 1200px;
-  margin-left: 70px;
+  width: 1140px;
+  margin-left: 60px;
+  margin-bottom: 40px;
 }
 
 .hotel-card {
@@ -576,7 +603,7 @@ body {
   border: solid;
   border-color: rgba(230, 230, 230, 1);
   border-width: 1px;
-  /*height: 438px;*/
+  height: 398x;
 }
 
 .hotel-card-link {
@@ -607,11 +634,13 @@ body {
 }
 
 /*Пагинация*/
+
 .pagination {
   display: flex;
   margin: 0 auto;
   width: 1060px;
   height: 60px;
+  margin-top: 40px;
 }
 
 .pagination-link {
