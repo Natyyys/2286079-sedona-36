@@ -531,7 +531,7 @@ body {
   font-family: inherit;
 
   width: 143px;
-  height: 24x;
+  height: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 20px;
@@ -564,40 +564,39 @@ body {
 
 /*Результаты поиска*/
 
-.catalog-container {
-  width: 1200px;
-}
-
 .catalog-hotel-search {
+  width: 1060px;
+  padding-left: 70px;
+  padding-right: 70px;
   background-color: #FFFFFF;
 }
 
+.results {
+  display: flex;
+}
+
 .catalog-search {
+  width: 338px;
+  margin-right: 200px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
-
-  width: 1200px;
-  margin-left: 70px;
-  margin-top: 50px;
-}
-
-.button-light {
-  font-size: 10px;
-  background-color: #FFFFFF;
-  color: #000000;
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  margin: 50px 8px 40px 0;
 }
 
 .select-control {
-  width: 288px;
+  width: 292px;
   height: 44px;
-  margin: 50px 70px 40px 200px;
+  margin-right: 62px;
+}
+
+.button-light {
+  width: 48px;
+  margin-left: 8px;
+  font-size: 8px;
+  background-color: #FFFFFF;
+  color: #000000;
 }
 
 .select-control,
@@ -612,20 +611,16 @@ body {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-  width: 1140px;
-  margin-left: 60px;
-  margin-bottom: 40px;
+  justify-content: space-between;
 }
 
 .hotel-card {
   text-align: center;
-  width: 300px;
+  width: 298px;
   padding: 20px;
-  margin: 10px;
   border: solid;
   border-color: rgba(230, 230, 230, 1);
   border-width: 1px;
-  height: 398x;
 }
 
 .hotel-card-link {

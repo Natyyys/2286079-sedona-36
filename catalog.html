@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <div class="wrapper">
   <header class="page-header">
     <div class="navigation-container">
     <a class="navigation-logo" href="index.html">
@@ -48,7 +49,7 @@
     </div>
   </header>
 
-  <main class="main-inner">
+  <main class="main-container main-inner">
     <div class="filter-container">
     <h1 class="inner-title">Гостиницы Седоны</h1>
     <ul class="breadcrumbs">
@@ -142,6 +143,7 @@
 
 
     <section class="catalog-hotel-search">
+      <div class="results">
       <b class="catalog-search">Найдено гостиниц: 38</b>
 
       <select class="select-control" aria-label="Сортировка">
@@ -159,8 +161,8 @@
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать список</span>
       </a>
+      </div>
 
-      <div class="catalog-container">
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
@@ -233,7 +235,6 @@
         </li>
       </ul>
     </section>
-  </div>
   </main>
 
   <footer class="page-footer">
@@ -249,6 +250,7 @@
         </form>
       </div>
     </section>
+
     <section class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
@@ -275,6 +277,7 @@
 
     </section>
   </footer>
+  </div>
 
 </body>
 </html>
