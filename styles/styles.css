@@ -133,6 +133,10 @@ body {
   padding: 8px 50px;
 }
 
+.button-navigation-user-item {
+  margin: 14px 0 14px 20px;
+}
+
 .main-index-promo {
   background-color: #8199a5;
   background-image: url("../images/hero.jpg");
@@ -141,11 +145,6 @@ body {
   background-position: center;
   padding: 51px 371px 82px 371px;
 }
-
-.button-navigation-user-item {
-  margin: 14px 0 14px 20px;
-}
-
 /*Преимущества и услуги*/
 
 .advantages {
@@ -175,6 +174,7 @@ body {
   flex-wrap: wrap;
   list-style: none;
   box-sizing: border-box;
+  margin-top: 21px;
 }
 
 .advantages-title {
@@ -182,31 +182,31 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 62px;
 }
 
 .advantages-item {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
-  max-width: 230px;
   padding: 113px 85px;
-}
-
-.services-item {
-  color: #000000;
-  background-color: rgba(131, 179, 211, 0.12);
-  max-width: 230px;
-  min-height: 223px;
-  padding: 81px 85px;
-}
-
-.advantages-item-box {
-  padding: 102px 85px;
+  box-sizing: border-box;
+  flex: 0 0 400px;
 }
 
 .advantages-item-photo {
   display: flex;
   color: #FFFFFF;
   background-color: #82B3D3;
+}
+
+.advantages-item-reverse {
+  flex-direction: row-reverse;
+}
+
+.advantages-item-box {
+  box-sizing: border-box;
+  flex: 0 0 400px;
+  padding: 102px 85px;
 }
 
 .advantages-item:nth-child(3) {
@@ -216,6 +216,7 @@ body {
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .services{
@@ -237,12 +238,22 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 0 347.5px 20px;
 }
 
 .services-text {
   margin: 0;
   padding: 0 355px 64px;
+}
+
+.services-item {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+  max-width: 230px;
+  min-height: 223px;
+  padding: 81px 85px;
 }
 
 .services-item-title {
@@ -256,6 +267,7 @@ body {
 .services-item-text {
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 
 .services-item:nth-child(even) {
@@ -348,9 +360,16 @@ body {
 }
 
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.footer-social-item {
+  width: 47px;
+  height: 40px;
 }
 
 .footer-contacts-phone {
@@ -379,7 +398,7 @@ body {
   font-weight: 700;
   line-height: 78px;
   margin: 0;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 /*Отборы*/
@@ -599,6 +618,7 @@ body {
 
 .pagination-link {
   font-size: 20px;
+  box-sizing: border-box;
   line-height: 36px;
   font-weight: 700;
   color: #FFFFFF;
