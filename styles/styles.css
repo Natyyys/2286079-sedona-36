@@ -107,6 +107,8 @@ body {
 
 .header-logo {
   display: block;
+  margin-bottom: -6px;
+  position: relative;
 }
 
 /*Кнопки*/
@@ -481,7 +483,49 @@ body {
   max-width: 121px;
   padding: 12px 0 12px 20px;
   margin-right: 2px;
-  border: none;
+
+}
+
+/*Range*/
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 48px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 0 solid #FFFFFF;
+  cursor: pointer;
+}
+
+.rabge-togger:active {
+  outline: 2px solid #83B3D3;
+}
+
+.range-togger:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -20px;
 }
 
 /*Кнопки фильтра*/
