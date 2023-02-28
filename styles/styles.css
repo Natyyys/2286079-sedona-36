@@ -65,6 +65,12 @@ body {
 
 .navigation-logo {
   margin-right: 46px;
+  margin-bottom: -6px;
+  z-index: 1;
+}
+
+.navigation-item {
+  margin-right: 32px;
 }
 
 .navigation-link {
@@ -75,7 +81,6 @@ body {
   color: #000000;
   text-decoration: none;
   padding: 20px 0;
-  margin-right: 32px;
 }
 
 .navigation-list {
@@ -107,8 +112,6 @@ body {
 
 .header-logo {
   display: block;
-  margin-bottom: -6px;
-  position: relative;
 }
 
 /*Кнопки*/
@@ -164,15 +167,14 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
-  margin: 0 auto;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
   padding: 0 280px;
 }
 
 .advantages-text {
   margin: 0;
   margin-bottom: 69px;
-  padding: 0 274px;
+  padding: 0 200px;
 }
 
 .advantages-list {
@@ -257,7 +259,7 @@ body {
 .services-text {
   margin: 0;
   margin-bottom: 64px;
-  padding: 0 355px;
+  padding: 0 200px;
 }
 
 .services-item {
@@ -305,7 +307,7 @@ body {
 
 .hotel-search-text {
   margin: 0;
-  padding: 0 304px 54px;
+  padding: 0 290px 54px;
 }
 
 .button-search-hotel {
@@ -472,7 +474,7 @@ body {
 .filter-price {
   display: flex;
   padding-top: 16px;
-  padding-bottom: 36px;
+  padding-bottom: 48px;
 }
 
 .number-input {
@@ -483,26 +485,27 @@ body {
   max-width: 121px;
   padding: 12px 0 12px 20px;
   margin-right: 2px;
-
+  border: none;
 }
 
 /*Range*/
 
-.range-scale {
+.range {
   position: relative;
   height: 4px;
-  margin-top: 48px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
   position: absolute;
-  height: 4px;
+  height: 100%;
   background-color: #FFFFFF;
 }
 
 .range-toggle {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
@@ -511,21 +514,20 @@ body {
   cursor: pointer;
 }
 
-.rabge-togger:active {
+.range-toggle:active {
   outline: 2px solid #83B3D3;
 }
 
-.range-togger:focus {
+.range-toggle:focus {
   outline: 3px solid #83B3D3;
 }
 
 .toggle-min {
-  top: -8px;
+  left: 0;
 }
 
 .toggle-max {
-  top: -8px;
-  right: -20px;
+  right: 0;
 }
 
 /*Кнопки фильтра*/
@@ -595,13 +597,13 @@ body {
 }
 
 .hotel-list {
-  display: grid;
-  grid-template-columns: repeat(3, 340px);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
   margin-bottom: 40px;
   justify-content: space-between;
+  gap: 20px 0;
   list-style: none;
 }
 
@@ -609,7 +611,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 16px 20px;
-  text-align: center;
   width: 298px;
   padding: 20px;
   border: solid;
@@ -619,25 +620,29 @@ body {
 
 .hotel-card-link {
   grid-column: 1/-1;
+  text-decoration: none;
+}
+
+.hotel-card-image  {
+  display: block;
+}
+
+.hotel-card-title {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   font-weight: 700;
-  text-decoration: none;
-}
-
-.hotel-card-title {
-  text-align: start;
+  text-align: left;
   margin: 0;
   margin-top: 16px;
 }
 
 .hotel-card-type {
-  text-align: start;
+  text-align: left;
 }
 
 .hotel-card-price {
-  text-align: end;
+  text-align: right;
 }
 
 .details {
