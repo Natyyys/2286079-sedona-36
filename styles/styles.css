@@ -514,12 +514,11 @@ body {
   cursor: pointer;
 }
 
-.range-toggle:active {
-  outline: 2px solid #83B3D3;
-}
-
 .range-toggle:focus {
   outline: 3px solid #83B3D3;
+}
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
 }
 
 .toggle-min {
