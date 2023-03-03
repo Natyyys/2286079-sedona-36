@@ -332,12 +332,38 @@ body {
   padding: 81px 85px;
 }
 
+.services-hotel {
+  background-image: url("../images/house.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 74px;
+  background-position: top;
+  padding: 0 0 30px 0;
+}
+
+.services-food {
+  background-image: url("../images/food.svg");
+  background-repeat: no-repeat;
+  background-size: 74px 70px;
+  background-position: top;
+  padding: 0 0 30px 0;
+}
+
+.services-souvenirs {
+  background-image: url("../images/souvenir.svg");
+  background-repeat: no-repeat;
+  background-size: 64px 76px;
+  background-position: top;
+  padding: 0 0 30px 0;
+}
+
 .services-item-title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  padding-top: 102px;
+  margin: 0;
 }
 
 .services-item-text {
@@ -355,6 +381,10 @@ body {
 .hotel-search {
   text-align: center;
   padding-bottom: 96px;
+}
+
+.services-hotel {
+  position: relative;
 }
 
 .hotel-search-title {
