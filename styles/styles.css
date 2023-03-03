@@ -73,6 +73,10 @@ body {
   margin-right: 32px;
 }
 
+.navigation-link-curret {
+  border-bottom: 2px solid #756257;
+}
+
 .navigation-link {
   display: block;
   font-size: 20px;
@@ -100,14 +104,50 @@ body {
   list-style: none;
 }
 
+.navigation-user-list .navigation-user-item:nth-child(1) {
+  background-image: url("../images/header/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 10px;
+}
+
+.navigation-user-list .navigation-user-item:nth-child(2) {
+  background-image: url("../images/header/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 10px;
+}
+
 .navigation-user-link {
+  position: relative;
   display: block;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: inherit;
   text-decoration: none;
-  padding: 23px 13px;
+  padding: 23px 12px;
+}
+
+.navigation-favourites {
+  display: flex;
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #7DB54F;
+  border-radius: 10px;
+  content: "";
+
+  transform: translate(10px, -15px);
 }
 
 .header-logo {
@@ -631,7 +671,6 @@ body {
   line-height: 28px;
   color: #000000;
   font-weight: 700;
-  text-align: left;
   margin: 0;
   margin-top: 16px;
 }
