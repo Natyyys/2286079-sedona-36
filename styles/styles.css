@@ -133,7 +133,6 @@ body {
   display: flex;
   color: #FFFFFF;
   font-size: 10px;
-  line-height: 10px;
   font-weight: 400;
   justify-content: center;
   align-items: center;
@@ -145,8 +144,6 @@ body {
   height: 20px;
   background-color: #7DB54F;
   border-radius: 10px;
-  content: "";
-
   transform: translate(10px, -15px);
 }
 
@@ -194,6 +191,11 @@ body {
   padding: 51px 371px 82px 371px;
 }
 
+.main-divider {
+  position: absolute;
+  transform: translate(-828px, 384px);
+}
+
 /*Преимущества и услуги*/
 
 .advantages {
@@ -225,12 +227,32 @@ body {
   list-style: none;
 }
 
+.advantages-title-photo,
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 62px;
+  position: relative;
+}
+
+.advantages-title-photo::after {
+  content: "";
+  position: absolute;
+  top: 86px;
+  left: 85px;
+  width: 60px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.advantages-title::after {
+  content: "";
+  position: absolute;
+  top: 86px;
+  left: 85px;
+  width: 60px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 .advantages-item {
