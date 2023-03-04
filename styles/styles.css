@@ -166,6 +166,15 @@ body {
   border-radius: 4px;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .button-small {
   font-size: 16px;
   line-height: 20px;
@@ -194,7 +203,7 @@ body {
 
 .main-divider {
   position: absolute;
-  transform: translate(-828px, 381px);
+  transform: translate(-828px, 384px);
 }
 
 /*Преимущества и услуги*/
@@ -488,6 +497,14 @@ body {
   fill: #83B3D3;
 }
 
+.social-button:hover svg {
+  fill: #68A2CA;
+}
+
+.social-button:active svg {
+  fill: rgba(104, 162, 202, 0.3)
+}
+
 .footer-contacts-phone {
   width: 331px;
   font-size: 40px;
@@ -495,6 +512,14 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .htmlacademy-link {
@@ -510,6 +535,14 @@ body {
   left: 0;
   margin: auto;
   fill: #000000;
+}
+
+.htmlacademy-link:hover svg {
+  fill: #756157;
+}
+
+.htmlacademy-link:active svg{
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 /*Catalog*/
@@ -555,6 +588,14 @@ body {
   position: relative;
 }
 
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-icon {
   position: absolute;
   top: 0;
@@ -564,6 +605,14 @@ body {
   margin: auto;
   fill: #FFFFFF;
   box-sizing: border-box;
+}
+
+.breadcrumbs-link:hover svg {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active svg {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-link-icon::after {
@@ -683,9 +732,27 @@ body {
   background-color: #82B3D3;
 }
 
+.button-submit:hover,
+.button-submit:focus
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background-color: #68A2CA;
+}
+
+.button-submit:active,
+.newsletter-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-reset {
   padding: 8px 57.5px;
   border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.button-reset:focus {
+  border: 3px solid #83B3D3;
   background-color: transparent;
 }
 
@@ -751,8 +818,16 @@ body {
   border-color: #000000;
 }
 
-.card-toggle svg {
-  fill: #000000;
+.card-toggle:hover {
+  border-color: #000000;
+}
+
+.card-toggle:focus {
+  border-color: #68A2CA;
+}
+
+.card-toggle:active {
+  border-color: #000000;
 }
 
 .button-light {
@@ -882,6 +957,7 @@ body {
   text-decoration: none;
   display: block;
   padding: 11.36px 23.45px;
+  border-radius: 4px;
 }
 
 .pagination-link-dual {
@@ -894,7 +970,23 @@ body {
   background-color:inherit;
 }
 
-.pagination-current {
+.pagination-current{
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   color: #000000;
   background-color: #F2F2F2;
 }
