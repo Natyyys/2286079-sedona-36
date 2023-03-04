@@ -684,6 +684,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  padding: 6px 0 6px 0;
 }
 
 .select-control {
@@ -692,9 +693,42 @@ body {
   color: #333333;
   min-width: 290px;
   padding: 12px 0 12px 18px;
-  border-width: 2px;
-  margin-right: 62px;
+  margin-right: auto;
+  border-radius: 4px;
+  border: 2px solid #E5E5E5;
+  appearance: none;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  padding-right: 40px;
+}
 
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus {
+  border-color: #3F5E72;
+  outline: none;
+}
+
+.card-toggle {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.card-toggle-current {
+  border-color: #000000;
+}
+
+.card-toggle svg {
+  fill: #000000;
 }
 
 .button-light {
