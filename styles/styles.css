@@ -548,9 +548,33 @@ body {
 }
 
 .breadcrumbs-link {
+  display: flex;
   font-size: 16px;
   line-height: 21px;
-  margin-right: 28.5px;
+  margin-right: 33px;
+  position: relative;
+}
+
+.breadcrumbs-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.breadcrumbs-link-icon::after {
+  content: "";
+  width: 8px;
+  height: 20px;
+  display: block;
+  background-image: url("../images/arrow-right.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateX(23px);
 }
 
 .catalog-filter {
@@ -810,7 +834,21 @@ body {
   background-color: #7DB54F;
   padding-left: 18px;
   padding-right: 18px;
+}
 
+.raiting {
+  display: flex;
+}
+
+.raiting-star {
+  content: "";
+  width: 18px;
+  height: 17px;
+  display: block;
+  background-image: url("../images/star.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px 6px 10px 0;
 }
 
 .hotel-rating {
