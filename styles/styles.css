@@ -446,6 +446,8 @@ body {
  width: 704px;
 }
 
+
+
 .field {
   font-size: 18px;;
   line-height: 24px;
@@ -454,7 +456,8 @@ body {
   background-color: #F2F2F2;
   width: 452px;
   padding: 14px 0 14px 20px;
-  border: 0;
+  border-width: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .newsletter-button {
@@ -464,7 +467,12 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
-  border: 0;
+  border-width: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.newsletter-button:hover {
+  background-color: #68A2CA;
 }
 
 .footer-social {
@@ -746,14 +754,23 @@ body {
 
 .button-reset {
   padding: 8px 57.5px;
-  border: none;
+  border: 3px solid transparent;
   background-color: transparent;
   box-sizing: border-box;
+}
+
+.botton-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
 }
 
 .button-reset:focus {
   border: 3px solid #83B3D3;
   background-color: transparent;
+}
+
+.botton-reset:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Результаты поиска*/
@@ -862,9 +879,8 @@ body {
   gap: 16px 20px;
   width: 298px;
   padding: 20px;
-  border: solid;
-  border-color: rgba(230, 230, 230, 1);
-  border-width: 1px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .hotel-card-link {
@@ -905,10 +921,28 @@ body {
   padding-right: 20px;
 }
 
+.favourites:hover,
+.favourites:focus {
+  background-color: #68A2CA;
+}
+
+.favourites:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .favourites-in {
   background-color: #7DB54F;
   padding-left: 18px;
   padding-right: 18px;
+}
+
+.favourites-in:hover,
+.favourites-in:focus {
+  background-color: #6C9E42;
+}
+
+.favourites-in:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .raiting {
