@@ -682,9 +682,18 @@ body {
   font-weight: 700;
   font-family: inherit;
   max-width: 121px;
-  padding: 12px 0 12px 20px;
+  padding: 12px 40px 12px 20px;
   margin-right: 2px;
   border: none;
+  box-sizing: border-box;
+}
+
+.number-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.number-input:active {
+  outline: 2px solid #000000;
 }
 
 .number-input-left {
