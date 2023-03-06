@@ -206,12 +206,11 @@ body {
   position: absolute;
   content: "";
   width: 100%;
-  height: 12%;
+  height: 57px;
   left: 0;
-  bottom: -2px;
+  bottom: 0;
   background-image: url("../images/divider.svg");
   background-repeat: no-repeat;
-  z-index: 1;
 }
 
 .main-divider {
@@ -565,8 +564,6 @@ body {
 .htmlacademy-link:active svg{
   fill: rgba(117, 97, 87, 0.3);
 }
-
-
 
 /*Catalog*/
 
