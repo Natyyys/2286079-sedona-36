@@ -199,6 +199,19 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 51px 371px 82px 371px;
+  position: relative;
+}
+
+.main-index-promo::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 12%;
+  left: 0;
+  bottom: -2px;
+  background-image: url("../images/divider.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .main-divider {
@@ -553,6 +566,8 @@ body {
   fill: rgba(117, 97, 87, 0.3);
 }
 
+
+
 /*Catalog*/
 
 .filter-container {
@@ -688,6 +703,7 @@ body {
 .control:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 
 .control:focus .control-mark {
   outline: 3px solid #83B3D3;
