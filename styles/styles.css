@@ -20,7 +20,7 @@ html {
 
 body {
   margin: 0;
-  min-height: 100%;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -44,11 +44,13 @@ body {
   margin-right: auto;
   background-color: #FFFFFF;
   width: 1200px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-box {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 }
 
 .page-header {
@@ -69,14 +71,6 @@ body {
   z-index: 1;
 }
 
-.navigation-item {
-  margin-right: 32px;
-}
-
-.navigation-link-curret {
-  border-bottom: 2px solid #756257;
-}
-
 .navigation-link {
   display: block;
   font-size: 20px;
@@ -84,7 +78,22 @@ body {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
-  padding: 20px 0;
+  padding: 20px 16px;
+}
+
+.navigation-link-curret {
+  position: relative;
+}
+
+.navigation-link-curret::after {
+  position: absolute;
+  content: "";
+  right: 16px;
+  left: 16px;
+  bottom: -1px;
+  height: 2px;
+  background-color: #756257;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -123,7 +132,6 @@ body {
   display: block;
   font-size: 20px;
   line-height: 24px;
-  font-weight: 700;
   color: inherit;
   text-decoration: none;
   padding: 23px 12px;
@@ -133,18 +141,16 @@ body {
   display: flex;
   color: #FFFFFF;
   font-size: 10px;
-  font-weight: 400;
   justify-content: center;
   align-items: center;
 
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 12px;
+  right: -7px;
   width: 20px;
   height: 20px;
   background-color: #7DB54F;
-  border-radius: 10px;
-  transform: translate(10px, -15px);
+  border-radius: 50%;
 }
 
 .header-logo {
@@ -213,11 +219,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.main-divider {
-  position: absolute;
-  transform: translate(-828px, 384px);
-}
-
 /*Преимущества и услуги*/
 
 .advantages {
@@ -255,26 +256,23 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 30px;
   position: relative;
-}
-
-.advantages-title-photo::after {
-  content: "";
-  position: absolute;
-  top: 86px;
-  left: 85px;
-  width: 60px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .advantages-title::after {
   content: "";
-  position: absolute;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
   top: 86px;
   left: 85px;
   width: 60px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.advantages-title-photo::after {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item {
@@ -355,24 +353,15 @@ body {
 }
 
 .services-hotel {
-  background-image: url("../images/house.svg");
-  background-repeat: no-repeat;
-  background-size: 75px 74px;
-  background-position: top;
+  background-image: url("../images/home.svg");
 }
 
 .services-food {
   background-image: url("../images/food.svg");
-  background-repeat: no-repeat;
-  background-size: 74px 70px;
-  background-position: top;
 }
 
 .services-souvenirs {
   background-image: url("../images/souvenir.svg");
-  background-repeat: no-repeat;
-  background-size: 64px 76px;
-  background-position: top;
 }
 
 .services-item-title {
@@ -384,6 +373,10 @@ body {
   padding-top: 102px;
   padding-bottom: 30px;
   margin: 0;
+
+  background-repeat: no-repeat;
+  background-size: 75px 76px;
+  background-position: top;
 }
 
 .services-item-text {
@@ -401,10 +394,6 @@ body {
 .hotel-search {
   text-align: center;
   padding-bottom: 96px;
-}
-
-.services-hotel {
-  position: relative;
 }
 
 .hotel-search-title {
@@ -458,8 +447,6 @@ body {
  width: 704px;
 }
 
-
-
 .field {
   font-size: 18px;;
   line-height: 24px;
@@ -504,17 +491,23 @@ body {
 .footer-social-item {
   width: 47px;
   height: 40px;
-  position: relative;
+
 }
 
 .footer-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
   fill: #83B3D3;
+}
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
 }
 
 .social-button:hover svg {
@@ -543,17 +536,13 @@ body {
 }
 
 .htmlacademy-link {
-  position: relative;
-  width: 156px;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  box-sizing: border-box;
 }
 
 .htmlacademy-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   fill: #000000;
 }
 
