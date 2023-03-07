@@ -488,12 +488,6 @@ body {
   list-style: none;
 }
 
-.footer-social-item {
-  width: 47px;
-  height: 40px;
-
-}
-
 .footer-icon {
   margin: auto;
   fill: #83B3D3;
@@ -592,9 +586,9 @@ body {
 .breadcrumbs-link {
   display: flex;
   font-size: 16px;
-  line-height: 21px;
-  margin-right: 33px;
-  position: relative;
+  padding-right: 10px;
+  align-items: center;
+  height: 21px;
 }
 
 .breadcrumbs-link:hover {
@@ -606,14 +600,8 @@ body {
 }
 
 .breadcrumbs-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  margin-right: auto;
   fill: #FFFFFF;
-  box-sizing: border-box;
 }
 
 .breadcrumbs-link:hover svg {
@@ -624,16 +612,23 @@ body {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.breadcrumbs-link-icon::after {
+.breadcrumbs-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+  background-image: url("../images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   content: "";
   width: 8px;
-  height: 20px;
-  display: block;
-  background-image: url("../images/arrow-right.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: translateX(23px);
+  height: 21px;
+  margin-right: 10px;
 }
+
+
 
 .catalog-filter {
   display: flex;
@@ -673,12 +668,12 @@ body {
 
 .control {
   position: relative;
-  display: block;
-  padding-left: 36px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .control-mark {
-  position: absolute;
+  margin-right: 16px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -690,8 +685,7 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-
-.control:focus .control-mark {
+.control:focus-within .control-mark {
   outline: 3px solid #83B3D3;
 }
 
@@ -707,7 +701,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
   top: 6px;
@@ -737,8 +730,7 @@ body {
 .filter-price {
   display: flex;
   padding-top: 16px;
-  padding-bottom: 48px;
-  position: relative;
+  margin-bottom: 44px;
 }
 
 .number-input {
@@ -746,7 +738,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   font-family: inherit;
-  max-width: 121px;
+  width: 143px;
   padding: 12px 40px 12px 20px;
   margin-right: 2px;
   border: none;
@@ -765,28 +757,31 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
+.number-input-left::-webkit-inner-spin-button,
+.number-input-right::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 .number-input-right {
   border-radius: 0 4px 4px 0;
 }
 
-.price-from {
-  color: rgb(170, 170, 170);
-  font-size: 18px;
-  line-height: 24px;
-  font-family: inherit;
-  font-weight: 400;
-  position: absolute;
-  transform: translate(-35px, 10px);
+.filter-price label {
+  position: relative;
 }
 
-.price-to {
-  color: rgb(170, 170, 170);
+.filter-price span {
+  position: absolute;
+  content: "";
   font-size: 18px;
   line-height: 24px;
-  font-family: inherit;
-  font-weight: 400;
-  position: absolute;
-  transform: translate(-35px, 10px);
+  color: rgb(170, 170, 170);
+  z-index: 1;
+  top: 12px;
+  right: 20px;
+  transform: translateX(50%);
+
 }
 
 /*Range*/
