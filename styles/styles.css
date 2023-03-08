@@ -138,11 +138,10 @@ body {
   border-radius: 50%;
 }
 
-.navigation-user-link:hover svg {
+.navigation-user-link:hover svg,
+.navigation-user-link:focus svg {
  fill: #756157;
 }
-
-
 
 .header-logo {
   display: block;
@@ -256,7 +255,6 @@ button[disabled]:hover {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 30px;
-  position: relative;
 }
 
 .advantages-title::after {
@@ -865,6 +863,7 @@ button[disabled]:hover {
 .button-reset:focus {
   border: 3px solid #83B3D3;
   background-color: transparent;
+  outline: none;
 }
 
 .botton-reset:active {
@@ -940,14 +939,17 @@ button[disabled]:hover {
 
 .card-toggle:hover {
   border-color: #000000;
+  outline: none;
 }
 
 .card-toggle:focus {
   border-color: #68A2CA;
+  outline: none;
 }
 
 .card-toggle:active {
   border-color: #000000;
+  outline: none;
 }
 
 .button-light {
