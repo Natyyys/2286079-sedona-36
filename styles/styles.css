@@ -132,7 +132,7 @@ body {
 }
 
 .navigation-user-link:hover svg,
-.navigation-user-link:focus svg, {
+.navigation-user-link:focus svg {
  fill: #756157;
 }
 
@@ -1181,9 +1181,9 @@ button[disabled]:hover {
   z-index: 1;
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 .modal {
   position: relative;
