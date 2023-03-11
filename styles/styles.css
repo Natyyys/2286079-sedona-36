@@ -44,13 +44,13 @@ body {
   margin-right: auto;
   background-color: #FFFFFF;
   width: 1200px;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-box {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
@@ -66,9 +66,13 @@ body {
 /*Навигация*/
 
 .navigation-logo {
-  margin-right: 46px;
+  margin-right: 44px;
   margin-bottom: -6px;
   z-index: 1;
+}
+
+.navigation-item {
+  margin-right: 32px;
 }
 
 .navigation-link {
@@ -78,22 +82,11 @@ body {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
-  padding: 20px 16px;
+  padding: 20px 0;
 }
 
 .navigation-link-curret {
-  position: relative;
-}
-
-.navigation-link-curret::after {
-  position: absolute;
-  content: "";
-  right: 16px;
-  left: 16px;
-  bottom: -1px;
-  height: 2px;
-  background-color: #756257;
-  z-index: 1;
+  border-bottom: 2px solid #756257;
 }
 
 .navigation-list {
@@ -193,7 +186,7 @@ button[disabled]:hover {
 }
 
 .button-navigation-user-item {
-  margin: 14px 0 14px 20px;
+  margin: 14px 0 14px 22px;
 }
 
 .main-index-promo {
@@ -202,7 +195,7 @@ button[disabled]:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 51px 371px 82px 371px;
+  padding: 51px 371px 75px 371px;
   position: relative;
 }
 
@@ -236,7 +229,7 @@ button[disabled]:hover {
 
 .advantages-text {
   margin: 0;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
   padding: 0 200px;
 }
 
@@ -269,7 +262,7 @@ button[disabled]:hover {
 }
 
 .advantages-title-photo::after {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item {
@@ -440,20 +433,44 @@ button[disabled]:hover {
 
 .newsletter-form {
  display: flex;
- margin: 0 auto;
- width: 704px;
+ margin-left: 258px;
 }
 
+
 .field {
-  font-size: 18px;;
-  line-height: 24px;
   font: inherit;
   color: #000000;
   background-color: #F2F2F2;
-  width: 452px;
+  width: 432px;
   padding: 14px 0 14px 20px;
   border-width: 0;
   border-radius: 4px 0 0 4px;
+}
+
+.field::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.field:not(:disabled):hover {
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.field:not(:placeholder-shown) {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+}
+
+.field:disabled,
+.field:disabled::placeholder {
+  opacity: 0.5;
 }
 
 .newsletter-button {
@@ -552,7 +569,7 @@ button[disabled]:hover {
 /*Catalog*/
 
 .filter-container {
-  padding: 35px 70px 70px;
+  padding: 35px 70px 56px 70px;
   color: #FFFFFF;
   background-color: #8abada;
   background-image: url("../images/filter.jpg");
@@ -744,12 +761,17 @@ button[disabled]:hover {
   box-sizing: border-box;
 }
 
+.number-input:not(:disabled):hover {
+  background-color: #E6E6E6;
+}
+
 .number-input:focus {
+  background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
 }
 
-.number-input:active {
-  outline: 2px solid #000000;
+.number-input:disabled {
+  opacity: 0.5;
 }
 
 .number-input-left {
@@ -777,10 +799,9 @@ button[disabled]:hover {
   line-height: 24px;
   color: rgb(170, 170, 170);
   z-index: 1;
-  top: 12px;
+  top: 50%;
   right: 20px;
-  transform: translateX(50%);
-
+  transform: translateY(-50%);
 }
 
 /*Range*/
@@ -874,6 +895,7 @@ button[disabled]:hover {
 .catalog-hotel-search {
   padding: 50px 70px 60px;
   background-color: #FFFFFF;
+  position: relative;
 }
 
 .results {
@@ -892,8 +914,7 @@ button[disabled]:hover {
 }
 
 .select-control {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 16px;
   color: #333333;
   min-width: 290px;
   padding: 12px 0 12px 18px;
@@ -903,7 +924,7 @@ button[disabled]:hover {
   appearance: none;
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 16px center;
   padding-right: 40px;
 }
 
@@ -971,10 +992,11 @@ button[disabled]:hover {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 40px;
+  padding-bottom: 39px;
   justify-content: space-between;
   gap: 20px 0;
   list-style: none;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card {
@@ -1059,7 +1081,7 @@ button[disabled]:hover {
   height: 17px;
   display: block;
   background-image: url("../images/star.svg");
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   padding: 10px 6px 10px 0;
 }
@@ -1077,7 +1099,7 @@ button[disabled]:hover {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 38px;
   list-style: none;
 }
 
@@ -1094,12 +1116,12 @@ button[disabled]:hover {
   background-color: #82B3D3;
   text-decoration: none;
   display: block;
-  padding: 11.36px 23.45px;
+  padding: 12px 24px;
   border-radius: 4px;
 }
 
 .pagination-link-dual {
-  padding: 11.36px 18.45px;
+  padding: 12px 19px;
 }
 
 .ellipsis {
@@ -1159,9 +1181,9 @@ button[disabled]:hover {
   z-index: 1;
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 .modal {
   position: relative;
@@ -1192,10 +1214,8 @@ button[disabled]:hover {
   border-radius: 50%;
   background-color: #F2F2F2;
   border: none;
-  background-image: url(../images/modal/close.svg);
-  background-repeat: no-repeat;
-  background-position: center;
 }
+
 
 .modal-close-button:not(:disabled):hover {
   background-color: #E6E6E6;
@@ -1206,7 +1226,8 @@ button[disabled]:hover {
   outline: 3px solid #83B3D3;
 }
 
-.modal-close-button:not(:disabled):active {
+.modal-close-button:not(:disabled):active,
+.modal-close-button svg:active {
   opacity: 0.4;
   background-color: #E6E6E6;
 }
@@ -1229,6 +1250,7 @@ button[disabled]:hover {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4px;
+  position: relative;
 }
 
 .search-input {
@@ -1244,10 +1266,10 @@ button[disabled]:hover {
   width: 400px;
 }
 
-.search-input-date {
-  background-image: url(../images/modal/calendar.svg);
-  background-repeat: no-repeat;
-  background-position: right 20px center;
+.input-calendar {
+  position: absolute;
+  right: 22px;
+  opacity: 0.6;
 }
 
 .search-input:not(:disabled):hover {
