@@ -25,7 +25,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden {
@@ -42,7 +42,7 @@ body {
 .wrapper {
   margin-left: auto;
   margin-right: auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 1200px;
 }
 
@@ -118,7 +118,7 @@ body {
 
 .navigation-favourites {
   display: flex;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 10px;
   justify-content: center;
   align-items: center;
@@ -127,13 +127,13 @@ body {
   right: 2px;
   width: 20px;
   height: 20px;
-  background-color: #7DB54F;
+  background-color: #7db54f;
   border-radius: 50%;
 }
 
 .navigation-user-link:hover svg,
 .navigation-user-link:focus svg {
- fill: #756157;
+  fill: #756157;
 }
 
 .header-logo {
@@ -143,7 +143,7 @@ body {
 /*Кнопки*/
 
 .button {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   font: inherit;
   font-weight: 700;
@@ -156,7 +156,7 @@ body {
 }
 
 button[disabled]:hover {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .button:hover,
@@ -165,11 +165,11 @@ button[disabled]:hover {
 }
 
 .button:active {
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .button-small {
@@ -275,8 +275,9 @@ button[disabled]:hover {
 
 .advantages-item-photo {
   display: flex;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  width: 100%;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .advantages-photo {
@@ -305,7 +306,7 @@ button[disabled]:hover {
   margin: 0;
 }
 
-.services{
+.services {
   text-align: center;
   padding-top: 64px;
 }
@@ -315,6 +316,7 @@ button[disabled]:hover {
   padding: 0;
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .services-title {
@@ -376,7 +378,7 @@ button[disabled]:hover {
 }
 
 .services-item:nth-child(even) {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /*Поиск гостицины*/
@@ -408,7 +410,7 @@ button[disabled]:hover {
 /*Footer*/
 
 .newsletter {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #9ec4e0;
   background-image: url("../images/footer/subscribe.png");
   background-size: cover;
@@ -432,15 +434,15 @@ button[disabled]:hover {
 }
 
 .newsletter-form {
- display: flex;
- margin-left: 258px;
+  display: flex;
+  margin-left: 258px;
 }
 
 
 .field {
   font: inherit;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 432px;
   padding: 14px 0 14px 20px;
   border-width: 0;
@@ -453,17 +455,17 @@ button[disabled]:hover {
 }
 
 .field:not(:disabled):hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .field:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
   outline-offset: -3px;
 }
 
 .field:not(:placeholder-shown) {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   outline: 2px solid #000000;
   outline-offset: -2px;
 }
@@ -478,19 +480,21 @@ button[disabled]:hover {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   border-width: 0;
   border-radius: 0 4px 4px 0;
+  max-width: 232px;
 }
 
 .newsletter-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .footer-social {
   display: flex;
   justify-content: space-between;
+  gap: 195px;
   padding: 40px 70px 30px;
 }
 
@@ -498,19 +502,19 @@ button[disabled]:hover {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
   list-style: none;
+  align-items: center;
+  padding: 5px 0;
 }
 
 .footer-icon {
   margin: auto;
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .social-button {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 47px;
   height: 40px;
   background-repeat: no-repeat;
@@ -519,11 +523,11 @@ button[disabled]:hover {
 }
 
 .social-button:hover svg {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .social-button:active svg {
-  fill: rgba(104, 162, 202, 0.3)
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts-phone {
@@ -533,6 +537,8 @@ button[disabled]:hover {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+  min-width: 332px;
+  align-self: center;
 }
 
 .footer-contacts-phone:hover,
@@ -562,7 +568,7 @@ button[disabled]:hover {
   fill: #756157;
 }
 
-.htmlacademy-link:active svg{
+.htmlacademy-link:active svg {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -570,7 +576,7 @@ button[disabled]:hover {
 
 .filter-container {
   padding: 35px 70px 56px 70px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #8abada;
   background-image: url("../images/filter.jpg");
   background-size: cover;
@@ -591,13 +597,14 @@ button[disabled]:hover {
   margin: 0;
   padding: 0;
   list-style: none;
-  }
+}
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   list-style: none;
 }
 
@@ -607,6 +614,7 @@ button[disabled]:hover {
   padding-right: 10px;
   align-items: center;
   height: 21px;
+  padding-bottom: 20px;
 }
 
 .breadcrumbs-link:hover {
@@ -619,7 +627,7 @@ button[disabled]:hover {
 
 .breadcrumbs-icon {
   margin-right: auto;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .breadcrumbs-link:hover svg {
@@ -644,6 +652,7 @@ button[disabled]:hover {
   width: 8px;
   height: 21px;
   margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 .catalog-filter {
@@ -691,9 +700,9 @@ button[disabled]:hover {
 .control-mark {
   margin-right: 16px;
   left: 0;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 4px;
 }
 
@@ -702,7 +711,7 @@ button[disabled]:hover {
 }
 
 .control:focus-within .control-mark {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .control:active .control-mark {
@@ -738,7 +747,7 @@ button[disabled]:hover {
   left: 5px;
   width: 10px;
   height: 10px;
-  background-color: #3F5E72;
+  background-color: #3f5e72;
   border-radius: 50%;
   content: "";
 }
@@ -762,12 +771,12 @@ button[disabled]:hover {
 }
 
 .number-input:not(:disabled):hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .number-input:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .number-input:disabled {
@@ -815,7 +824,7 @@ button[disabled]:hover {
 .range-bar {
   position: absolute;
   height: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .range-toggle {
@@ -824,16 +833,18 @@ button[disabled]:hover {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 5px;
-  border: 0 solid #FFFFFF;
+  border: none;
+  cursor: pointer;
 }
 
 .range-toggle:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
+
 .range-toggle:active {
-  outline: 2px solid #83B3D3;
+  outline: 2px solid #83b3d3;
 }
 
 .toggle-min {
@@ -854,14 +865,14 @@ button[disabled]:hover {
   padding: 8px 50px;
   border: none;
   margin-bottom: 32px;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-submit:hover,
-.button-submit:focus
+.button-submit:focus,
 .newsletter-button:hover,
 .newsletter-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-submit:active,
@@ -881,7 +892,7 @@ button[disabled]:hover {
 }
 
 .button-reset:focus {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   background-color: transparent;
   outline: none;
 }
@@ -893,14 +904,16 @@ button[disabled]:hover {
 /*Результаты поиска*/
 
 .catalog-hotel-search {
-  padding: 50px 70px 60px;
-  background-color: #FFFFFF;
+  padding: 50px 70px 52px;
+  background-color: #ffffff;
   position: relative;
 }
 
 .results {
   display: flex;
-  padding-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: end;
+  padding-bottom: 32px;
 }
 
 .catalog-search {
@@ -911,16 +924,18 @@ button[disabled]:hover {
   text-transform: uppercase;
   color: #000000;
   padding: 6px 0 6px 0;
+  max-width: 338px;
 }
 
 .select-control {
   font-size: 16px;
   color: #333333;
-  min-width: 290px;
+  width: 292px;
+  max-height: 48px;
   padding: 12px 0 12px 18px;
-  margin-right: auto;
+  margin-right: 62px;
   border-radius: 4px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   appearance: none;
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
@@ -929,11 +944,11 @@ button[disabled]:hover {
 }
 
 .select-control:hover {
-  border-color: #68A2CA;
+  border-color: #68a2ca;
 }
 
 .select-control:focus {
-  border-color: #3F5E72;
+  border-color: #3f5e72;
   outline: none;
 }
 
@@ -949,8 +964,9 @@ button[disabled]:hover {
   justify-content: center;
   width: 48px;
   height: 48px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .card-toggle-current {
@@ -963,7 +979,7 @@ button[disabled]:hover {
 }
 
 .card-toggle:focus {
-  border-color: #68A2CA;
+  border-color: #68a2ca;
   outline: none;
 }
 
@@ -977,7 +993,7 @@ button[disabled]:hover {
   max-width: 48px;
   padding: 0;
   font-size: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -996,7 +1012,7 @@ button[disabled]:hover {
   justify-content: space-between;
   gap: 20px 0;
   list-style: none;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .hotel-card {
@@ -1005,7 +1021,7 @@ button[disabled]:hover {
   gap: 16px 20px;
   width: 298px;
   padding: 20px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
 
@@ -1014,7 +1030,7 @@ button[disabled]:hover {
   text-decoration: none;
 }
 
-.hotel-card-image  {
+.hotel-card-image {
   display: block;
 }
 
@@ -1042,29 +1058,29 @@ button[disabled]:hover {
 }
 
 .favourites {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .favourites:hover,
 .favourites:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
-.favourites:active{
+.favourites:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
 .favourites-in {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   padding-left: 18px;
   padding-right: 18px;
 }
 
 .favourites-in:hover,
 .favourites-in:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .favourites-in:active {
@@ -1088,7 +1104,7 @@ button[disabled]:hover {
 
 .hotel-rating {
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-weight: 400;
   padding: 9px 22px 8px 23px;
 }
@@ -1097,6 +1113,7 @@ button[disabled]:hover {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-top: 38px;
@@ -1105,6 +1122,7 @@ button[disabled]:hover {
 
 .pagination-item {
   margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .pagination-link {
@@ -1112,8 +1130,8 @@ button[disabled]:hover {
   box-sizing: border-box;
   line-height: 36px;
   font-weight: 700;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   text-decoration: none;
   display: block;
   padding: 12px 24px;
@@ -1127,17 +1145,17 @@ button[disabled]:hover {
 .ellipsis {
   font-weight: 400;
   color: #000000;
-  background-color:inherit;
+  background-color: inherit;
 }
 
-.pagination-current{
+.pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-link:hover,
 .pagination-link:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:active {
@@ -1148,13 +1166,13 @@ button[disabled]:hover {
 .pagination-current:focus,
 .pagination-current:active {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pade-footer-catalog {
   text-align: center;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
@@ -1190,14 +1208,14 @@ button[disabled]:hover {
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
 .modal-title {
   margin-top: 0;
   margin-bottom: 64px;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 .modal-search {
@@ -1212,24 +1230,24 @@ button[disabled]:hover {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
 }
 
 
 .modal-close-button:not(:disabled):hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-close-button:focus {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-close-button:not(:disabled):active,
 .modal-close-button svg:active {
   opacity: 0.4;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-close-button:disabled {
@@ -1260,7 +1278,7 @@ button[disabled]:hover {
   font-size: 18px;
   color: #000000;
   padding: 12px 20px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 4px;
   border: none;
   width: 400px;
@@ -1273,13 +1291,13 @@ button[disabled]:hover {
 }
 
 .search-input:not(:disabled):hover {
-  color: rgba(0,0,0,0.6);
-  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #e6e6e6;
 }
 
 .search-input:focus {
   outline: 2px solid #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
 }
 
@@ -1289,13 +1307,13 @@ button[disabled]:hover {
 
 .date-message {
   font-size: 16px;
-  margin:  0;
+  margin: 0;
   margin-left: auto;
   max-width: 420px;
 }
 
 .date-error {
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .field-number {
@@ -1316,8 +1334,7 @@ button[disabled]:hover {
 }
 
 .label-number-adults,
-.label-number-children
-{
+.label-number-children {
   display: inline;
 }
 
@@ -1341,14 +1358,14 @@ button[disabled]:hover {
 
 .search-input-number::-webkit-outer-spin-button,
 .search-input-number::-webkit-inner-spin-button {
-appearance: none;
-margin: 0;
+  appearance: none;
+  margin: 0;
 }
 
 .button-counter {
   width: 40px;
   height: 48px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   background-repeat: no-repeat;
   background-position: center;
@@ -1359,7 +1376,7 @@ margin: 0;
   content: "";
   width: 20px;
   height: 20px;
-  border: 3px solid #82B3D3;
+  border: 3px solid #82b3d3;
   border-radius: 4px;
   position: absolute;
   left: 0;
@@ -1374,7 +1391,7 @@ margin: 0;
 }
 
 .button-counter:disabled {
-  opacity: 0.4;;
+  opacity: 0.4;
 }
 
 .button-plus {
@@ -1383,7 +1400,7 @@ margin: 0;
 }
 
 .button-counter::before {
-  content:"";
+  content: "";
   width: 20px;
   height: 20px;
   background-position: center;
@@ -1399,7 +1416,7 @@ margin: 0;
 
 
 .button-plus::before {
-  background-image: url(../images/modal/plus.svg);
+  background-image: url("../images/modal/plus.svg");
 }
 
 .button-counter:not(:disabled):hover::before,
@@ -1417,13 +1434,13 @@ margin: 0;
 }
 
 .button-minus::before {
-  background-image: url(../images/modal/minus.svg);
+  background-image: url("../images/modal/minus.svg");
 }
 
 .button-search {
   font-size: 20px;
   line-height: 24px;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   width: 100%;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -1433,12 +1450,12 @@ margin: 0;
 
 .button-search:not(:disabled):hover,
 .button-search:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-search:not(:disabled):active {
-  background-color: #68A2CA;
-  color: rgba(255,255,255,0.3);
+  background-color: #68a2ca;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-search:disabled {
@@ -1459,24 +1476,24 @@ margin: 0;
 
 .tooltip-toggle {
   width: 26px;
-  height:  26px;
+  height: 26px;
   border: none;
-  background-image: url(../images/modal/info.svg);
+  background-image: url("../images/modal/info.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   padding: 0;
   margin: 0;
   display: block;
 }
 
 .tooltip-toggle:not(:disabled):hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .tooltip-toggle:not(:disabled):active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .tooltip-toggle:disabled {
@@ -1485,16 +1502,15 @@ margin: 0;
 
 .tooltip-text {
   width: 216px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: none;
   padding: 15px 18px 18px 22px;
   background-color: #333333;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  display: block;
   position: absolute;
   top: 40px;
   left: 50%;
@@ -1508,7 +1524,7 @@ margin: 0;
   width: 19px;
   height: 9px;
   position: absolute;
-  background-image: url(../images/modal/tooltip-arrow.svg);
+  background-image: url("../images/modal/tooltip-arrow.svg");
   bottom: 100%;
   left: 0;
   right: 0;
