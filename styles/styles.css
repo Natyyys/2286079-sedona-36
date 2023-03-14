@@ -306,6 +306,12 @@ button[disabled]:hover {
   margin: 0;
 }
 
+.advantages-item p,
+.services-item p,
+.pade-footer-catalog p {
+  color: #333333;
+}
+
 .services {
   text-align: center;
   padding-top: 64px;
@@ -412,7 +418,7 @@ button[disabled]:hover {
 .newsletter {
   color: #ffffff;
   background-color: #9ec4e0;
-  background-image: url("../images/footer/subscribe.png");
+  background-image: url("../images/footer/Subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -452,6 +458,8 @@ button[disabled]:hover {
 .field::placeholder {
   font-size: 18px;
   line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
 }
 
 .field:not(:disabled):hover {
@@ -793,6 +801,10 @@ button[disabled]:hover {
   margin: 0;
 }
 
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .number-input-right {
   border-radius: 0 4px 4px 0;
 }
@@ -941,6 +953,7 @@ button[disabled]:hover {
   background-repeat: no-repeat;
   background-position: right 16px center;
   padding-right: 40px;
+  background-color: transparent;
 }
 
 .select-control:hover {
@@ -1018,6 +1031,7 @@ button[disabled]:hover {
 .hotel-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 1fr;
   gap: 16px 20px;
   width: 298px;
   padding: 20px;
@@ -1234,7 +1248,6 @@ button[disabled]:hover {
   border: none;
 }
 
-
 .modal-close-button:not(:disabled):hover {
   background-color: #e6e6e6;
 }
@@ -1307,6 +1320,7 @@ button[disabled]:hover {
 
 .date-message {
   font-size: 16px;
+  line-height: 21px;
   margin: 0;
   margin-left: auto;
   max-width: 420px;
@@ -1413,7 +1427,6 @@ button[disabled]:hover {
   bottom: 0;
   margin: auto;
 }
-
 
 .button-plus::before {
   background-image: url("../images/modal/plus.svg");
