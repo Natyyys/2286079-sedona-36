@@ -898,6 +898,16 @@ input[type="number"] {
   background-color: transparent;
 }
 
+.button-reset:disabled {
+  background-color: transparent;
+  opacity: 0.1;
+}
+
+.button-reset[disabled]:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
 .button-reset:hover {
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
@@ -912,6 +922,8 @@ input[type="number"] {
 .botton-reset:active {
   color: rgba(255, 255, 255, 0.3);
 }
+
+
 
 /*Результаты поиска*/
 
