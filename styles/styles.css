@@ -431,7 +431,7 @@ button[disabled]:hover {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding: 96px 398px 20px;
+  padding: 96px 350px 20px;
 }
 
 .page-main-text {
@@ -539,7 +539,7 @@ button[disabled]:hover {
 }
 
 .footer-contacts-phone {
-  width: 331px;
+  width: 334px;
   font-size: 40px;
   line-height: 1;
   text-transform: uppercase;
@@ -802,7 +802,7 @@ button[disabled]:hover {
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .number-input-right {
@@ -922,8 +922,6 @@ input[type="number"] {
 .botton-reset:active {
   color: rgba(255, 255, 255, 0.3);
 }
-
-
 
 /*Результаты поиска*/
 
@@ -1225,9 +1223,9 @@ input[type="number"] {
   z-index: 1;
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 .modal {
   position: relative;
@@ -1339,9 +1337,10 @@ input[type="number"] {
 }
 
 .search-input:focus {
-  outline: 2px solid #000000;
-  background-color: #ffffff;
+  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
   color: #000000;
+  opacity: 0.6;
 }
 
 .search-input:disabled {
@@ -1382,7 +1381,8 @@ input[type="number"] {
 }
 
 .label-number-children {
-  margin-right: 54px;
+  margin-right: 58px;
+  margin-bottom: 0;
 }
 
 .search-input-number {
@@ -1496,10 +1496,6 @@ input[type="number"] {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-search:disabled {
-  opacity: 0.3;
-}
-
 .search-label-icon {
   position: relative;
   padding-right: 26px;
@@ -1509,7 +1505,7 @@ input[type="number"] {
   position: absolute;
   width: 26px;
   height: 26px;
-  right: 45px;
+  right: 48px;
 }
 
 .tooltip-toggle {
