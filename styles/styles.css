@@ -306,6 +306,12 @@ button[disabled]:hover {
   margin: 0;
 }
 
+.advantages-item p,
+.services-item p,
+.pade-footer-catalog p {
+  color: #333333;
+}
+
 .services {
   text-align: center;
   padding-top: 64px;
@@ -412,7 +418,7 @@ button[disabled]:hover {
 .newsletter {
   color: #ffffff;
   background-color: #9ec4e0;
-  background-image: url("../images/footer/subscribe.png");
+  background-image: url("../images/footer/Subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -425,7 +431,7 @@ button[disabled]:hover {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  padding: 96px 398px 20px;
+  padding: 96px 350px 20px;
 }
 
 .page-main-text {
@@ -452,6 +458,8 @@ button[disabled]:hover {
 .field::placeholder {
   font-size: 18px;
   line-height: 24px;
+  color: #000000;
+  opacity: 0.6;
 }
 
 .field:not(:disabled):hover {
@@ -531,7 +539,7 @@ button[disabled]:hover {
 }
 
 .footer-contacts-phone {
-  width: 331px;
+  width: 334px;
   font-size: 40px;
   line-height: 1;
   text-transform: uppercase;
@@ -793,6 +801,10 @@ button[disabled]:hover {
   margin: 0;
 }
 
+input[type="number"] {
+  appearance: textfield;
+}
+
 .number-input-right {
   border-radius: 0 4px 4px 0;
 }
@@ -886,6 +898,16 @@ button[disabled]:hover {
   background-color: transparent;
 }
 
+.button-reset:disabled {
+  background-color: transparent;
+  opacity: 0.1;
+}
+
+.button-reset[disabled]:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
 .button-reset:hover {
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
@@ -941,6 +963,7 @@ button[disabled]:hover {
   background-repeat: no-repeat;
   background-position: right 16px center;
   padding-right: 40px;
+  background-color: transparent;
 }
 
 .select-control:hover {
@@ -1018,6 +1041,7 @@ button[disabled]:hover {
 .hotel-card {
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 1fr;
   gap: 16px 20px;
   width: 298px;
   padding: 20px;
@@ -1213,8 +1237,9 @@ button[disabled]:hover {
 }
 
 .modal-title {
-  margin-top: 0;
-  margin-bottom: 64px;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 50px 64px 0;
   text-transform: uppercase;
 }
 
@@ -1234,6 +1259,11 @@ button[disabled]:hover {
   border: none;
 }
 
+.modal-close-button svg {
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
 
 .modal-close-button:not(:disabled):hover {
   background-color: #e6e6e6;
@@ -1271,17 +1301,28 @@ button[disabled]:hover {
   position: relative;
 }
 
+.search-label-subtitle {
+  display: block;
+  max-width: 120px;
+}
+
 .search-input {
   font-family: inherit;
   line-height: 24px;
   font-weight: 700;
   font-size: 18px;
   color: #000000;
-  padding: 12px 20px;
+  padding: 12px 50px 12px 20px;
   background-color: #f2f2f2;
   border-radius: 4px;
   border: none;
-  width: 400px;
+  width: 440px;
+  box-sizing: border-box;
+}
+
+.search-input::placeholder {
+  color: #000000;
+  opacity: 0.6;
 }
 
 .input-calendar {
@@ -1296,9 +1337,10 @@ button[disabled]:hover {
 }
 
 .search-input:focus {
-  outline: 2px solid #000000;
-  background-color: #ffffff;
+  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
   color: #000000;
+  opacity: 0.6;
 }
 
 .search-input:disabled {
@@ -1307,6 +1349,7 @@ button[disabled]:hover {
 
 .date-message {
   font-size: 16px;
+  line-height: 21px;
   margin: 0;
   margin-left: auto;
   max-width: 420px;
@@ -1333,22 +1376,18 @@ button[disabled]:hover {
   display: flex;
 }
 
-.label-number-adults,
-.label-number-children {
-  display: inline;
-}
-
 .label-number-adults {
   margin-right: 46px;
 }
 
 .label-number-children {
-  margin-right: 56px;
+  margin-right: 58px;
+  margin-bottom: 0;
 }
 
 .search-input-number {
   line-height: 20px;
-  padding: 14px 0;
+  padding: 10px 0;
   text-align: center;
   width: 30px;
   appearance: textfield;
@@ -1414,7 +1453,6 @@ button[disabled]:hover {
   margin: auto;
 }
 
-
 .button-plus::before {
   background-image: url("../images/modal/plus.svg");
 }
@@ -1458,10 +1496,6 @@ button[disabled]:hover {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-search:disabled {
-  opacity: 0.3;
-}
-
 .search-label-icon {
   position: relative;
   padding-right: 26px;
@@ -1471,7 +1505,7 @@ button[disabled]:hover {
   position: absolute;
   width: 26px;
   height: 26px;
-  right: 45px;
+  right: 48px;
 }
 
 .tooltip-toggle {
