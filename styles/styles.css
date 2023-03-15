@@ -1339,8 +1339,6 @@ input[type="number"] {
 .search-input:focus {
   outline: 3px solid #83b3d3;
   background-color: #e6e6e6;
-  color: #000000;
-  opacity: 0.6;
 }
 
 .search-input:disabled {
